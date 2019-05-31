@@ -1,0 +1,43 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Help on Defining a Query</title></head>
+<body bgcolor="white">
+<font size="2" face="Arial, Helvetica, sans-serif">
+<a name="tips"><font size="4">Help on Defining a Query</font></a>
+
+<p align="left">Please <font color="#992f2d">draw a query 
+structure</font>. 
+
+</p><p>For more details of the query features JChem offers, read the
+<a href="https://docs.chemaxon.com/display/docs/Query+Guide">JChem Query Guide</a>.
+
+</p><p><font size="3"><strong>Input Parameters</strong></font></p>   
+   
+<p><font color="#992f2d">Search type</font> defines the way compounds are searched. Options:
+</p><dl>
+<dt><i>Substructure</i>
+</dt><dd>Finds all molecules containing the given substructure.
+<dt><i>Superstructure</i>
+</dt><dd>search is the opposite of substructure search: It searches for those target molecules which can be found in the given superstructure query. 
+<dt><i>Exact</i>
+</dt><dd>A Exact search finds molecules that are equal to the query structure
+<dt><i>Exact Fragment</i>
+</dt><dd>A exact fragment search is between substructure and full search: the query must fully match to a fragment of the target.
+<dt><i>With a particular element</i>
+</dt><dd>A substructure search for two motifs
+</dd><dt><i>Similarity</i>
+</dt><dd>Finds molecules that are similar to the query 
+    structure. The similarity calculation uses the Tanimoto coefficient of the 
+    query structure and the molecule in the database.</dd>        
+</dl>
+
+<p><font color="#992f2d">Similarity threshold</font> specifies
+a lower limit for the Tanimoto coefficients calculated 
+using the fingerprints of the query molecule and the
+molecules in the database. If a Tanimoto value is greater
+than the threshold, then the query structure and the given 
+database structure are considered similar.
+      
+</font>
+
+
+</body></html>
